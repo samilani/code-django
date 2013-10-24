@@ -1,4 +1,8 @@
-from django.conf.urls import patterns, urls
+from django.conf.urls import patterns, url
 from rango import views
 
-urlpatterns = patterns('', urcl(r'^$', views.index, name='index'))
+urlpatterns = patterns('',
+	 url(r'^$', views.index, name='index'),
+	 url(r'^about/', views.about, name='about'),
+	 )
+
